@@ -32,14 +32,14 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`.
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
